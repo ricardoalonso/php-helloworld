@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+## Call the image assemble script
+/usr/libexec/s2i/assemble
+
+## Custom build
+echo $(date) > ./build.html
