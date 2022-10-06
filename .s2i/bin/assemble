@@ -1,8 +1,7 @@
 #!/bin/bash
 
-
-## Call the image assemble script
+echo "Call original build script..."
 /usr/libexec/s2i/assemble
 
-## Custom build
-echo $(date) > ./build.html
+echo "custom tasks... "
+echo "This app was built on $(date)" > ./builddate.html
